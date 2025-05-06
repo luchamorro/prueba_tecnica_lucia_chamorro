@@ -3,7 +3,7 @@
     --light: #fcf9f9;
     --color1: rgb(17, 182, 174);
     --color2: rgb(80, 216, 76);
-    --color3: rgb(230, 230, 230);
+    --color3: rgb(245, 235, 248);
 
 
   }
@@ -241,6 +241,30 @@ form button{
 .developer{
     font-size: 0.7rem;
     padding-top: 0.5rem;
+}
+
+.submit-button{
+
+    background-color: var(--dark);
+    border-style: none;
+    padding: 0.5rem;
+    color: var(--light);
+
+}
+
+input{
+    height: 2rem;
+}
+
+textarea{
+    height: 12rem;
+}
+
+.submit-button:hover{
+
+    background-color: var(--color1);
+    color: var(--dark);
+
 }
 
 @media (max-width: 768px) {
