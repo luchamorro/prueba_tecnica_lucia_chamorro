@@ -2,10 +2,8 @@
     --dark: #141414;
     --light: #fcf9f9;
     --color1: rgb(17, 182, 174);
-    --color2: rgb(80, 216, 76);
+    --color2: rgb(129, 185, 127);
     --color3: rgb(245, 235, 248);
-
-
   }
 
 
@@ -121,6 +119,37 @@ header nav ul{
 color:var(--color1);
     
 }
+
+
+.kaloo{
+    font-family: "Playfair Display", serif;
+    font-weight: bold;
+    font-style: italic;
+
+}
+
+.welcome{
+    z-index: 1100;
+    top: 23%;
+    text-align: center;
+    left:15rem;
+    position:fixed;
+    font-size: 5rem;
+    line-height: normal;
+    color: var(--color2);
+    animation: op 7s;
+    display: block;
+    opacity: 0;
+
+} 
+
+  @keyframes op {
+    0%{opacity: 0;}
+    30% {opacity: 1;}
+    80% {opacity: 1;}
+    100% {opacity: 0;}
+  }
+
 
 .hero {
     overflow: hidden;
@@ -266,6 +295,8 @@ textarea{
     color: var(--dark);
 
 }
+
+
 
 @media (max-width: 768px) {
     .menu {
