@@ -140,7 +140,7 @@ h2{
 }
 .content{
     padding-inline: 10%;
-    background-color: var(--light);
+    background-color: var(--color3);
     padding-block: 15rem;
 }
 
@@ -194,7 +194,7 @@ footer .up{
 
 .content2{
     text-align: center;
-    background-color: var(--color3);
+    background-color: var(--light);
     padding-block: 7rem;
 
 
@@ -237,6 +237,11 @@ form button{
         width: 100%;
         object-fit:cover;
       }
+
+.developer{
+    font-size: 0.7rem;
+    padding-top: 0.5rem;
+}
 
 @media (max-width: 768px) {
     .menu {
@@ -298,3 +303,4 @@ footer .up{
         flex-direction: column;
 
   }
+}
