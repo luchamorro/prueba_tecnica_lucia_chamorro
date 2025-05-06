@@ -358,4 +358,8 @@ footer .up{
         flex-direction: column;
 
   }
+
+  .welcome{
+    display: none;
+  }
 }
