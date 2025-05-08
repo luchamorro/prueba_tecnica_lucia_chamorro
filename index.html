@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sitio web</title>
+    <meta name=" description" content= "Kaloo: designer furniture made in the Basque Country. Quality, design and comfort." >
+    <title>Kaloo | designer furniture</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,16 +28,38 @@
               <li><a href="#about">About</a></li>
               <li><a href="#contact">Contact</a></li>
             </ul>
+            <div class="login-data"> 
+                <span id="userLog" style="display: none;"><a href="user.html"><i class="fa-solid fa-user"></i> Maria</a></span>
+                <button id="login-button">Log in</button>
+            </div>
           </nav>
+         
+          
     </header>
 
     <main>
-       
+     
         <section id="home">
+            <div id="clock"></div>
             <div class="hero">
                 <img src="img/sala-sofa.jpg" alt="sala y sofa">
                 <div class="welcome"><span>Welcome to </span><span class="kaloo">Kaloo </span><span>web page</span></div>
-            </div>
+                <div id="login-modal">
+                    <div id="container-modal">
+                        <p id="close-modal">X</p>
+                        <div id="content-modal">
+                            <form action="#" method="get" id = "form-modal" class="form-modal">
+                                <label for="nameLogin">User name:</label>
+                                <input type="text" id="nameLogin" name="nameLogin" placeholder="Maria" required>
+                                <label for="passLogin">Password:</label>
+                                <input type="password" id="passLogin" name="passLogin" placeholder="1234" required>
+                                <button id="password-eye" class="password-eye-open" type="button"></button>
+
+                                <button id="login-button-form" type="button">Login</button>
+                            </form>
+                        </div>
+                    </div>
+
         </section>
         
         <section class="content2" id = "catalog">
@@ -44,21 +67,26 @@
             <br>
             <p>Featured products</p>
                 <div class= "gallery">
-                     <img src="img/sofa1.jpg" alt="sofá verde"><img src="img/sofa2.jpg" alt="sofá rojo"><img src="img/sofa3.jpg" alt="sofá blacno"><img src="img/sofa4.jpg" alt="sofá color crema"> <img src="img/sofa5.jpg" alt="sofá gris"> <img src="img/sofa6.jpg" alt="">
+                     <img src="img/sofa1.jpg" alt="green couch" class="img-gallery"> 
+                     <img src="img/sofa2.jpg" alt="red couch" class="img-gallery">
+                     <img src="img/sofa3.jpg" alt="white couch" class="img-gallery">
+                     <img src="img/sofa4.jpg" alt="light couch" class="img-gallery"> 
+                     <img src="img/sofa5.jpg" alt="grey couch" class="img-gallery"> 
+                     <img src="img/sofa6.jpg" alt="yellow couch" class="img-gallery">
                 </div>
         </section>
         
         <section class="content" id="about">
             <div class="content-about">
                 <div class="img-designers">
-                    <img src="/img/designers.jpg" alt="Kaloo designers">
+                    <img src="img/designers.jpg" alt="Kaloo designers">
                 </div>
                 <div> 
                     <h2>About us</h2><br>
 
-                    <p> um dolor sit amet consectetur adipisicing elit. Dolores libero recusandae nisi sint officia iusto suscipit ad error voluptatum. Est itaque aliquid maxime iure. Eveniet fuga error deleniti sint excepturi.</p>
+                    <p> um dolor sit amet consectetur adipisicing elit. Dolores libero recusandae nisi sint officia iusto suscipit ad error voluptatum. Est itaque aliquid maxime iure <strong>design</strong> sit. Eveniet fuga error deleniti sint excepturi.</p>
                     <br>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores libero recusandae nisi sint officia iusto suscipit ad error voluptatum. Est itaque aliquid maxime iure. Eveniet fuga error deleniti sint excepturi.</p>
+                    <p>Lorem <strong>furniture</strong> ipsum dolor sit amet consectetur adipisicing elit. Dolores libero recusandae nisi sint officia iusto suscipit ad error voluptatum. Est itaque aliquid maxime iure. Eveniet fuga error deleniti sint excepturi.</p>
                     <br>
                     <br>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores libero recusandae nisi sint officia iusto suscipit ad error voluptatum. Est itaque aliquid maxime iure. Eveniet fuga error deleniti sint excepturi.</p>
@@ -70,24 +98,25 @@
 
         <section class="content3" id="contact">
             <h2>Contact</h2><br><br>
-                <form action="#" method="get">
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre" required>
-                
-                    <label for="email">Mail:</label>
-                    <input type="email" id="email" name="email" required>
-                
-                    <label for="mensaje">Mensaje:</label>
-                    <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
-                
-                    <label>
-                    <input type="checkbox" name="aceptar_politicas" required>
-                    Acepto las políticas de privacidad
-                    </label>
-                
-                    <br>
-                    <button class="submit-button" type="submit">Enviar</button>
-                </form>
+            <form action="#" method="get">
+                <label for="nombre">Name:</label>
+                <input type="text" id="nameForm" name="name" required>
+              
+                <label for="email">E-mail:</label>
+                <input type="email" id="emailForm" name="email" required>
+              
+                <label for="mensaje">Message:</label>
+                <textarea id="messageForm" name="message" rows="5" required></textarea>
+              
+                <label>
+                  <input id="acceptPolicies" type="checkbox" name="acceptPolicies" required>
+                  I accept the privacy policies
+                </label>
+              
+                <br>
+                <button class="submit-button" type="submit" id="contact-form-button" disabled>Send</button>
+              </form>
+              
               
         </section>
     </main>
@@ -115,5 +144,6 @@
         </section>
        
     </footer>
+    <script src="index.js"></script>
 </body>
 </html>

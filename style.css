@@ -43,6 +43,7 @@ html, body{
 header{
     display: flex;
     align-items:center;
+    width: 100%;
     padding-left: 1rem;
     background-color:var(--dark);
     top: 0;
@@ -50,6 +51,7 @@ header{
     color: var(--light);
     gap: 2.5rem;
     width: 100%;    padding-bottom: 0.4rem;
+    z-index:998 ;
 
     
 }
@@ -63,7 +65,7 @@ h1 {
     font-family: "Playfair Display", serif;
     font-style: italic;
     top:0;
-   z-index: 1000;
+   z-index: 999;
 }
 
 body{
@@ -75,6 +77,9 @@ body{
 
  .nav {
     padding-left: 5rem;  
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
   } 
   
   .menu {
@@ -129,7 +134,7 @@ color:var(--color1);
 }
 
 .welcome{
-    z-index: 1100;
+    
     top: 23%;
     text-align: center;
     left:15rem;
@@ -161,6 +166,7 @@ color:var(--color1);
     height: 100%;
     width: 100%;
     object-fit:cover;
+    z-index: -1;
   }
 
 h2{
@@ -182,15 +188,6 @@ h2{
     padding-top: 4rem;
    
 
-}
-.gallery img{
-    width: 15rem;
-    
-}
-
-.gallery img:hover{
-    opacity: 0.8;
-     
 }
 
 
@@ -235,7 +232,6 @@ footer .up{
    align-items: center;
    padding-block: 15rem;
 
-
 }
 
 form{
@@ -274,12 +270,23 @@ form button{
 
 .submit-button{
 
+    background-color: rgba(0, 0, 0, 0.105);
+    border-style: none;
+    padding: 0.5rem;
+    color: var(--light);
+
+}
+
+.submit-button2{
+
     background-color: var(--dark);
     border-style: none;
     padding: 0.5rem;
     color: var(--light);
 
 }
+
+
 
 input{
     height: 2rem;
@@ -289,13 +296,176 @@ textarea{
     height: 12rem;
 }
 
-.submit-button:hover{
+.submit-button2:hover{
 
     background-color: var(--color1);
     color: var(--dark);
 
 }
 
+#clock{
+    font-size: 1rem;
+    color: var(--color1);
+    background-color: #fcf9f9;
+    margin-right: 0.9rem;
+    margin-top: 4rem;
+    padding-inline: 0.6rem;
+    right:0;
+    position: fixed;
+    z-index: 3000;
+}
+
+#login-modal {
+    
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 1000;
+        background: rgba(0, 0, 0, 0.253);
+        display: none;
+        justify-content: center;
+        align-items: center;
+        z-index: 9998;
+      
+   }
+
+  #container-modal{
+    background-color: white;
+    height: 20rem;
+    width: 22rem;
+    
+  }
+  
+  #close-modal{
+   padding-left: 93%;
+   padding-top: 6%;
+   cursor: pointer;
+  }
+
+   #content-modal{
+    height: 85%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+  } 
+
+  #form-modal{
+    width:85%;
+    display: flex;
+    gap: 1rem;
+   
+  }
+
+#login-button{
+    
+    background-color: var(--dark);
+    border-style: none;
+    padding: 0.5rem;
+    padding-inline: 2rem;
+    color: var(--light);
+    margin: 0 0 0 0;
+    font-size: 1.3rem;
+    font-weight: bold;
+    
+}
+
+#login-button:hover{
+    
+    color: var(--color1);
+    cursor: pointer;
+  
+}
+
+  #login-button-form {
+    background-color: var(--dark);
+    border-style: none;
+    padding: 0.5rem;
+    padding-inline: 2rem;
+    color: var(--light);
+    align-self: center;
+    margin-top: 1rem;
+}
+
+.password-eye-open{
+    width: 1.3rem;
+    height: 1.3rem;
+    background-image: url(img/openeye.png);
+    background-size:cover;
+    /* left: 55rem;
+    bottom: 20rem;
+    position:fixed; */
+    color: rgba(255, 255, 255, 0);
+    border: none;
+    background-color: white;
+    cursor: pointer;
+       
+}
+
+.password-eye-close{
+    width: 1.3rem;
+    height: 1.3rem;
+    background-image: url(img/closedeye.png);
+    background-size: cover;
+    /* left: 55rem;
+    bottom: 20rem;
+    position:fixed; */
+    color: rgba(255, 255, 255, 0);
+    border: none;
+    background-color: white;  
+    cursor: pointer;     
+}
+
+.form-modal input{
+    padding-inline: 1rem;
+}
+
+.img-gallery{
+    
+    width: 15rem;
+
+}
+
+
+.img-gallery2{
+    
+    width: 17rem;
+    opacity: 0.1;
+
+}
+
+.img-gallery:hover{
+    opacity: 0.8;
+     
+}
+
+.login-data{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+#userLog{
+    margin-right: 1.5rem;
+}
+
+#userLog:hover{
+    color:var(--color1);
+}
+
+.userArea{
+    margin-top: 20rem;
+    padding-inline: 10%;
+    margin-bottom: 3rem;
+}
+
+.content-terms{
+
+    padding: 10%;
+}
 
 
 @media (max-width: 768px) {
@@ -363,3 +533,4 @@ footer .up{
     display: none;
   }
 }
+
