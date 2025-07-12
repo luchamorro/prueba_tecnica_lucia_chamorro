@@ -16,7 +16,7 @@
 </head>
 <body>
     <header>
-        <h1>Kaloo</h1>
+        <h1 id="h1">Kaloo</h1>
 
         <nav class="nav">
             <input type="checkbox" id="menu-toggle" class="menu-toggle">
@@ -30,7 +30,7 @@
             </ul>
             <div class="login-data"> 
                 <span id="userLog" style="display: none;"><a href="user.html"><i class="fa-solid fa-user"></i> Maria</a></span>
-                <button id="login-button">Log in</button>
+                <button id="login-button"><i class="fa-solid fa-user"></i></i></button>
             </div>
           </nav>
          
@@ -40,10 +40,14 @@
     <main>
      
         <section id="home">
-            <div id="clock"></div>
-            <div class="hero">
-                <img src="img/sala-sofa.jpg" alt="sala y sofa">
-                <div class="welcome"><span>Welcome to </span><span class="kaloo">Kaloo </span><span>web page</span></div>
+            <!-- <div id="clock"></div> -->
+<section class="hero">
+  <img src="img/sala-sofa.jpg" alt="Sofá" class="hero-img" />
+  <div id="welcome">
+    <span>Welcome to </span><span class="kaloo">Kaloo </span><span>web page</span>
+  </div>
+</section>
+
                 <div id="login-modal">
                     <div id="container-modal">
                         <p id="close-modal">X</p>
@@ -74,6 +78,24 @@
                      <img src="img/sofa5.jpg" alt="grey couch" class="img-gallery"> 
                      <img src="img/sofa6.jpg" alt="yellow couch" class="img-gallery">
                 </div>
+
+
+                <!-- Modal -->
+<div id="modal" class="modal" style="display:none;">
+    <div class="modalBackground">
+  <span id="modal-close" class="modal-close">&times;</span>
+
+ <div class="imgs-modal"> 
+<img id="modal-img" class="modal-content" alt="" width="47%">
+   <img id="modal-imgb" class="modal-content" alt="" width="47%">
+   </div>
+  <div id="modal-caption" class="modal-caption">
+    
+     <h3 id="modal-name"></h3> <span><span id="modal-price"></span> <i class="fa-solid fa-cart-shopping" id="cart"></i> </span>
+  </div>
+  </div>
+</div>
+
         </section>
         
         <section class="content" id="about">
@@ -84,14 +106,14 @@
                 <div> 
                     <h2>About us</h2><br>
 
-                    <p> um dolor sit amet consectetur adipisicing elit. Dolores libero recusandae nisi sint officia iusto suscipit ad error voluptatum. Est itaque aliquid maxime iure <strong>design</strong> sit. Eveniet fuga error deleniti sint excepturi.</p>
-                    <br>
-                    <p>Lorem <strong>furniture</strong> ipsum dolor sit amet consectetur adipisicing elit. Dolores libero recusandae nisi sint officia iusto suscipit ad error voluptatum. Est itaque aliquid maxime iure. Eveniet fuga error deleniti sint excepturi.</p>
-                    <br>
-                    <br>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores libero recusandae nisi sint officia iusto suscipit ad error voluptatum. Est itaque aliquid maxime iure. Eveniet fuga error deleniti sint excepturi.</p>
-                    <br>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores libero recusandae nisi sint officia iusto suscipit ad error voluptatum. Est itaque aliquid maxime iure. Eveniet fuga error deleniti sint excepturi.</p>
+                   <p>At <strong>Kaloo</strong>, we bring the timeless tradition of Basque craftsmanship to life through our exquisite handmade furniture. Rooted deeply in the rich cultural heritage of the Basque Country, our workshop combines age-old techniques with a modern design sensibility, creating unique pieces that tell a story of passion, skill, and respect for natural materials.</p>
+<br>
+<p>Every piece of furniture we create is meticulously crafted by our artisans using sustainably sourced wood and traditional joinery methods passed down through generations. We believe that furniture is not just functional—it is an expression of identity, comfort, and artistry that enhances the spaces where life unfolds.</p>
+<br>
+<p>Our commitment to quality, authenticity, and environmental responsibility guides every step of our process. From selecting the finest raw materials to applying the finishing touches by hand, we ensure that each item meets the highest standards of durability and beauty.</p>
+<br>
+<p>Based in the heart of the Basque Country, we are proud to carry forward a legacy of craftsmanship that celebrates creativity, tradition, and innovation. Whether you are seeking a bespoke dining table, a classic chair, or a statement piece, <strong>Kaloo</strong> offers furniture designed to last a lifetime and be treasured for generations.</p>
+
                 </div>
              </div>
         </section>
@@ -128,13 +150,13 @@
             <a href="#"><i class="fab fa-facebook"></i></a>
         </div>
         <ul>
-            <li><a href="privatepolicy.html">Política de privacidad</a></li>
-            <li><a href="termsandconditions.html">Términos y condiciones</a></li>
+            <li><a href="privatepolicy.html">Private policy</a></li>
+            <li><a href="termsandconditions.html">Terms and conditions</a></li>
         </ul>
         <address>
-            Calle 1, 123, Bilbao<br>
+            Iparaguirre 55, Bilbao<br>
              +34 123 456<br>
-             <a href="mailto:ejemplo@ejemplo.com">ejemplo@ejemplo.com</a>
+             <a href="mailto:hello@kaloo.com">hello@kaloo.com</a>
         </address>
         <div><p>Kaloo © 2025</p>
         <div class= "developer">
